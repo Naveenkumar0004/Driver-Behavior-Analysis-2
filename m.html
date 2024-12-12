@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Process Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .flowchart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .node {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #e9f3fe;
+            text-align: center;
+            width: 180px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .decision {
+            background-color: #fbe7fd;
+            border-color: #d5a7d8;
+        }
+        .arrow {
+            font-size: 24px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .flowchart .connector {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flowchart">
+        <div class="node">Patient</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node">Automatic Allocation <br>(Based on Availability and Expertise)</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node">View Assigned Therapist</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node">Therapy Sessions</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node">Feedback Verification</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node">Session Analysis <br>(Feedback Form)</div>
+        <div class="arrow">&#8595;</div>
+        <div class="node decision">10 Sessions Done?</div>
+        <div class="connector">
+            <div style="margin-right: 20px;">
+                <div class="arrow">&#8595;</div>
+                <div class="node">Create Therapy Plan/ <br>Make Changes</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Submit for Evaluation</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Supervisor Reviews <br>and Approves</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Follow Updated Plan</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Create Progress and Report</div>
+            </div>
+            <div style="margin-left: 20px;">
+                <div class="arrow">&#8595;</div>
+                <div class="node">Continue?</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Completely Improved/ <br>Discontinued</div>
+                <div class="arrow">&#8595;</div>
+                <div class="node">Issue Final Report</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
